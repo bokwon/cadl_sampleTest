@@ -9,16 +9,22 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<h3>California Driver License Sample Written Test</h3>
-	<ul class="nav nav-tabs">
-		<li role="presentation" class="active"><a href="#">Sample 1</a></li>
-		<li role="presentation"><a href="#">Sample 2</a></li>
-		<li role="presentation"><a href="#">Sample 3</a></li>
-		<li role="presentation"><a href="#">Sample 4</a></li>
-		<li role="presentation"><a href="#">Sample 5</a></li>
-		<li role="presentation"><a href="#">Sample 6</a></li>
-		<li role="presentation"><a href="#">Sample 7</a></li>
-	</ul>
+	<div id="container">
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-2">
+				<h3>California Driver License Sample Written Test</h3>
+				<div id="quiz">
+					<h4 class="question"></h4>
+					<ul class="choices"></ul>
+				</div>
+				<div class="btn-container">
+					<div class="button btn btn-success" id="next">Next</div>
+					<div class="button btn btn-info" id="prev">Prev</div>
+					<div class="button btn btn-warning" id="start">Start Over</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="bootstrap/bootstrap.min.js"></script>

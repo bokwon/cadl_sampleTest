@@ -2,3 +2,19 @@ body {
   margin: 20px;
   font-family: 'Roboto', sans-serif;
 }
+
+.btn-container {
+  text-align: center;
+}
+.btn-info, .btn-warning {
+  display: none;
+}
+
+ul li{
+  list-style: none;
+}
+
+.choices input[type=radio]{
+  margin-right: 10px;
+}
+

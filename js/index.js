@@ -13,7 +13,20 @@ var allQuestions = [{question: "When you drive through a construction zone, you 
                        correctAnswer:2
                      }];
 
+$(document).ready(function(){
+
+  // show first question
+  for(key in allQuestions[0]){
+    if(key === "question"){
+      $("#quiz h4").prepend("Q1: " + allQuestions[0][key]);
+    }else if(key === "choices"){
+      for(var i=0; i<allQuestions[0][key].length; i++){
+        $("#quiz ul").append("<li><input type='radio' name='answer' value='" + i + "'>" + allQuestions[0][key][i] + "</li>");
+      }
+    }
+  }
 
 
 
+});
 
